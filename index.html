@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="quizSection">
+         <div class="heading">
+            <h2>Time: <span id="timer"></span></h2>
+            <h1>Attempt The Quiz</h1>
+            <button class="cancel" onclick="cancelQuiz()">Cancel</button>
+         </div>
+    <div class="quizContainer">
+        <div id="quiz">
+        </div>
+        <div class="button1">
+            <div>
+                <button class="clear1" type="button" onclick="clear1()">Clear</button>
+            </div>
+            <div> <button type="button" onclick="submit()" class="submit">Sumbit</button></div>
+           
+        </div>
+        
+    </div>
+    </section>
+    
+    <section id="timesUp">
+        <div class="timeContainer">
+            <h1>Your Time Is UP</h1>
+            <button class="ok" onclick="ok()">OK</button>
+        </div>
+    </section>
+    
+    <section id="submited">
+        <div class="timeContainer">
+            <div id="score"></div>
+            <button class="ok" onclick="submitOk()">OK</button>
+        </div>
+    </section>
+  
+    <script src="app.js"></script>
+</body>
+</html>
